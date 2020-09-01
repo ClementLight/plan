@@ -752,16 +752,17 @@ database.map((item) => {
 })
 console.log(subjects)
 
-subjects.map((el) => {
+subjects.map(el=> {
   document.body.innerHTML += `
  <section class="top-container">
   <section class="maincontainers">
-    <div class="lessontype">${el}</div>
-    <div id="lessons${el}" class="lessons">
+    <div id="${el}" class="lessontype"></div>
+    <div id="lessons" class="lessons">
     </div>
   </section>
 </section>`
-})
+}
+
 
 database.map((item) => {
   document.getElementById(`lessons${item.subject}`).innerHTML += `

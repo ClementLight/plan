@@ -756,8 +756,8 @@ subjects.map((el) => {
   document.body.innerHTML += `
  <section class="top-container">
   <section class="maincontainers">
-    <div class="lessontype">${el}</div>
-    <div id="lessons${el}" class="lessons">
+    <div id="lessons${el}" class="lessontype"></div>
+    <div id="lessons" class="lessons">
     </div>
   </section>
 </section>`

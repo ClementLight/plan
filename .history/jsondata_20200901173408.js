@@ -739,29 +739,20 @@ let database = [
   },
 ]
 
-subjects = []
-function getSubjects(subjects, itemsubject) {
-  if (subjects.includes(itemsubject)) return
-  else {
-    subjects.push(itemsubject)
-  }
-}
+//   document.body.innerHTML += `
+//  <section class="top-container">
+//   <section idclass="maincontainers">
+//     <div class="lessontype">${item.subject}</div>
+//     <div id="lessons" class="lessons">
 
-database.map((item) => {
-  return getSubjects(subjects, item.subject)
+//     </div>
+//   </section>
+// </section>
+
+subjects = database.map((item) => {
+  return
 })
 console.log(subjects)
-
-subjects.map((el) => {
-  document.body.innerHTML += `
- <section class="top-container">
-  <section class="maincontainers">
-    <div class="lessontype">${el}</div>
-    <div id="lessons${el}" class="lessons">
-    </div>
-  </section>
-</section>`
-})
 
 database.map((item) => {
   document.getElementById(`lessons${item.subject}`).innerHTML += `

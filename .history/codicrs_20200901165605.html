@@ -14,10 +14,35 @@
       <input type="text" class="add-item__input--account" />
       <button class="add-item__button">Add Item</button>
     </section>
+    <section class="top-container">
+      <section class="maincontainers">
+        <div class="lessontype">CURRENT</div>
+        <div id="lessonsCurrent" class="lessons"></div>
+      </section>
+      <section class="maincontainers">
+        <div id="react-section" class="lessontype">REACT</div>
+        <div id="lessonsReact" class="lessons"></div>
+      </section>
+      <section class="maincontainers">
+        <div class="lessontype">JS</div>
+        <div id="lessonsJavascript" class="lessons"></div>
+      </section>
+      <section class="maincontainers">
+        <div class="lessontype">NODE</div>
+        <div id="lessonsNode" class="lessons"></div>
+      </section>
+      <section class="maincontainers">
+        <div class="lessontype">CSS</div>
+        <div id="lessonsCss" class="lessons"></div>
+      </section>
+      <section class="maincontainers">
+        <div class="lessontype">WEBDEV</div>
+        <div id="lessonsWebdev" class="lessons"></div>
+      </section>
+    </section>
 
     <!-- //TODO scripts -->
     <script src="jsondata.js"></script>
-    <!-- <script src="htmlgenerator.js"></script> -->
     <script>
       // const hoursList = [...document.querySelectorAll(".hours")]
       let allClasses = Array.from(document.querySelectorAll(".hours"))
@@ -104,30 +129,3 @@
     </script>
   </body>
 </html>
-
-<!-- <section class="top-container">
-      <section class="maincontainers">
-        <div class="lessontype">CURRENT</div>
-        <div id="lessonsCurrent" class="lessons"></div>
-      </section>
-      <section class="maincontainers">
-        <div id="react-section" class="lessontype">REACT</div>
-        <div id="lessonsReact" class="lessons"></div>
-      </section>
-      <section class="maincontainers">
-        <div class="lessontype">JS</div>
-        <div id="lessonsJavascript" class="lessons"></div>
-      </section>
-      <section class="maincontainers">
-        <div class="lessontype">NODE</div>
-        <div id="lessonsNode" class="lessons"></div>
-      </section>
-      <section class="maincontainers">
-        <div class="lessontype">CSS</div>
-        <div id="lessonsCss" class="lessons"></div>
-      </section>
-      <section class="maincontainers">
-        <div class="lessontype">WEBDEV</div>
-        <div id="lessonsWebdev" class="lessons"></div>
-      </section>
-    </section> -->

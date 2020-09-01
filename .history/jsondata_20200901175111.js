@@ -1,4 +1,4 @@
-let database = [
+let database = ([
   {
     id: "1",
     subject: "React",
@@ -737,31 +737,27 @@ let database = [
     title: "(Ken Cen出品)建網百科全書-使用 HTML,CSS,JS, jQuery,php,mySQL 建立網站",
     url: "https://www.udemy.com/course/ken-cens/learn/lecture/5246918?start=30#overview",
   },
-]
-
-subjects = []
+] / subjects = [])
 function getSubjects(subjects, itemsubject) {
   if (subjects.includes(itemsubject)) return
   else {
     subjects.push(itemsubject)
   }
 }
-
 database.map((item) => {
   return getSubjects(subjects, item.subject)
 })
 console.log(subjects)
 
-subjects.map((el) => {
-  document.body.innerHTML += `
+document.body.innerHTML += `
  <section class="top-container">
-  <section class="maincontainers">
-    <div class="lessontype">${el}</div>
-    <div id="lessons${el}" class="lessons">
+  <section idclass="maincontainers">
+    <div class="lessontype">${item.subject}</div>
+    <div id="lessons" class="lessons">
+
     </div>
   </section>
 </section>`
-})
 
 database.map((item) => {
   document.getElementById(`lessons${item.subject}`).innerHTML += `
