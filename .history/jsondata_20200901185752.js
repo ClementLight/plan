@@ -54,7 +54,15 @@ let database = [
     title: "The Complete Strapi Course",
     url: "https://www.udemy.com/course/the-complete-strapi-course/learn/lecture/20153090#overvieww",
   },
-
+  {
+    id: "7",
+    subject: "React",
+    tags: "React, Strapi",
+    hours: 28,
+    account: "SP",
+    title: "The Complete Strapi Course",
+    url: "https://www.udemy.com/course/the-complete-strapi-course/learn/lecture/20153090#overvieww",
+  },
   {
     id: "8",
     subject: "React",
@@ -392,7 +400,15 @@ let database = [
     title: "The Complete Full-Stack JavaScript Course!",
     url: "https://www.udemy.com/course/full-stack-javascript/learn/lecture/14022702?start=0#overview",
   },
-
+  {
+    id: "47",
+    subject: "Node",
+    tags: "Node",
+    hours: 25,
+    account: "SP",
+    title: "The Complete Full-Stack JavaScript Course!",
+    url: "https://www.udemy.com/course/full-stack-javascript/learn/lecture/14022702?start=0#overview",
+  },
   {
     id: "48",
     subject: "Node",
@@ -486,7 +502,15 @@ let database = [
     title: "User Experience (UX): The Ultimate Guide to Usability and UX",
     url: "https://www.udemy.com/course/ultimate-guide-to-ux/learn/lecture/218133#overview",
   },
-
+  {
+    id: "58",
+    subject: "Css",
+    tags: "Design, UX, UI",
+    hours: 29,
+    account: "SP",
+    title: "User Experience (UX): The Ultimate Guide to Usability and UX",
+    url: "https://www.udemy.com/course/graphic-design-masterclass-everything-you-need-to-know/learn/lecture/16859564?start=10#overview",
+  },
   {
     id: "58",
     subject: "Css",

@@ -486,7 +486,15 @@ let database = [
     title: "User Experience (UX): The Ultimate Guide to Usability and UX",
     url: "https://www.udemy.com/course/ultimate-guide-to-ux/learn/lecture/218133#overview",
   },
-
+  {
+    id: "58",
+    subject: "Css",
+    tags: "Design, UX, UI",
+    hours: 29,
+    account: "SP",
+    title: "User Experience (UX): The Ultimate Guide to Usability and UX",
+    url: "https://www.udemy.com/course/graphic-design-masterclass-everything-you-need-to-know/learn/lecture/16859564?start=10#overview",
+  },
   {
     id: "58",
     subject: "Css",
