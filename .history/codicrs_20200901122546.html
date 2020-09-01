@@ -229,7 +229,7 @@
       <input type="text" class="add-item__input--account" />
       <button class="add-item__button">Add Item</button>
     </section>
-    <!-- <section class="top-container">
+    <section class="top-container">
       <section class="maincontainers">
         <div class="lessontype">CURRENT</div>
         <div class="lessons">
@@ -240,146 +240,145 @@
           </div>
         </div>
       </section>
-    </section> -->
+    </section>
     <script>
-      let database = [
-        {
-          id: "1",
-          subject: "Node",
-          tags: "Node, MongoDB",
-          hours: 42,
-          account: "SP",
-          title: "Node.js, Express, MongoDB & More: The Complete Bootcamp 2020",
-          url: "https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/learn/lecture/15065290?start=135#overview",
-        },
-        {
-          id: "2",
-          subject: "React",
-          tags: "React, Styled Components",
-          hours: 7,
-          account: "SP",
-          title: "React Styled Components Tutorial and Project Course",
-          url: "https://www.udemy.com/course/styled-components-tutorial-and-project-course/learn/lecture/15328098?start=15#overview",
-        },
-        {
-          id: "3",
-          subject: "React",
-          tags: "Node",
-          hours: 35,
-          account: "MI",
-          title: "The Complete Node.js Developer Course (3rd Edition)",
-          url: "https://www.udemy.com/course/the-complete-nodejs-developer-course-2/learn/lecture/13729190?start=0#announcements",
-        },
-        {
-          id: "4",
-          subject: "React",
-          tags: "React, Gatsby",
-          hours: 38,
-          account: "SP",
-          title: "Gatsby Tutorial and Projects Course",
-          url: "https://www.udemy.com/course/gatsby-tutorial-and-projects-course/learn/lecture/14891808#overview",
-        },
-      ]
-
-      database.map((item) => {
-        document.body.innerHTML += `
+        database.map(item => )
+        document.body.innerHTML = `
        <section class="top-container">
         <section class="maincontainers">
           <div class="lessontype">CURRENT</div>
           <div class="lessons">
             <div class="lesson lesson-background-filter">
-              <a class="lessonname" href=${item.url}>${item.title}</a>
-              <span class="hours">${item.hours}</span>
-              <span class="account">${item.account}</span>
+              <a class="lessonname" href="https://www.udemy.com/course/styled-components-tutorial-and-project-course/learn/lecture/15328098?start=15#overview">React Styled Components Tutorial and Project Course</a>
+              <span class="hours">07</span>
+              <span class="account">SP</span>
             </div>
           </div>
         </section>
       </section>
         `
-      })
 
-      // const hoursList = [...document.querySelectorAll(".hours")]
-      let allClasses = Array.from(document.querySelectorAll(".hours"))
-      allClassesValues = allClasses.map((node) => parseInt(node.textContent))
-      let total = allClassesValues.reduce((a, b) => a + b, 0)
+        let database = [
+          {
+            id: "1",
+            subject: "Node",
+            tags: "Node, MongoDB",
+            hours: 42,
+            account: "SP",
+            title: "Node.js, Express, MongoDB & More: The Complete Bootcamp 2020",
+            url: "https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/learn/lecture/15065290?start=135#overview",
+          },
+          {
+            id: "2",
+            subject: "React",
+            tags: "React, Styled Components",
+            hours: 7,
+            account: "SP",
+            title: "React Styled Components Tutorial and Project Course",
+            url: "https://www.udemy.com/course/styled-components-tutorial-and-project-course/learn/lecture/15328098?start=15#overview",
+          },
+          {
+            id: "3",
+            subject: "React",
+            tags: "Node",
+            hours: 35,
+            account: "MI",
+            title: "The Complete Node.js Developer Course (3rd Edition)",
+            url: "https://www.udemy.com/course/the-complete-nodejs-developer-course-2/learn/lecture/13729190?start=0#announcements",
+          },
+          {
+            id: "4",
+            subject: "React",
+            tags: "React, Gatsby",
+            hours: 38,
+            account: "SP",
+            title: "Gatsby Tutorial and Projects Course",
+            url: "https://www.udemy.com/course/gatsby-tutorial-and-projects-course/learn/lecture/14891808#overview",
+          },
+        ]
 
-      const addItem = () => {
-        itemUrl = document.querySelector(".add-item__input--url").value
-        itemName = document.querySelector(".add-item__input--name").value
-        itemHours = document.querySelector(".add-item__input--hours").value
-        itemAccount = document.querySelector(".add-item__input--account").value
+        // const hoursList = [...document.querySelectorAll(".hours")]
+        let allClasses = Array.from(document.querySelectorAll(".hours"))
+        allClassesValues = allClasses.map((node) => parseInt(node.textContent))
+        let total = allClassesValues.reduce((a, b) => a + b, 0)
 
-        newItemHtml = `
+        const addItem = () => {
+          itemUrl = document.querySelector(".add-item__input--url").value
+          itemName = document.querySelector(".add-item__input--name").value
+          itemHours = document.querySelector(".add-item__input--hours").value
+          itemAccount = document.querySelector(".add-item__input--account").value
+
+          newItemHtml = `
         <div class="lesson lesson-background-filter">
         <a class="lessonname" href="${itemUrl}">${itemName} </a>
         <span class="hours">${itemHours}</span>
         <span class="account">${itemAccount}</span>
         </div>
         `
-        document.getElementById("react-section__lessons").insertAdjacentHTML("afterbegin", newItemHtml)
+          document.getElementById("react-section__lessons").insertAdjacentHTML("afterbegin", newItemHtml)
 
-        console.log(newItemHtml)
-      }
-
-      document.querySelector(".add-item__button").addEventListener("click", addItem)
-      console.log(navigator.userAgent)
-
-      //TODO check browser
-
-      let browserAndVersion = (navigator.sayswho = (function () {
-        var ua = navigator.userAgent,
-          tem,
-          M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || []
-        if (/trident/i.test(M[1])) {
-          tem = /\brv[ :]+(\d+)/g.exec(ua) || []
-          return "IE " + (tem[1] || "")
+          console.log(newItemHtml)
         }
-        if (M[1] === "Chrome") {
-          tem = ua.match(/\b(OPR|Edge?)\/(\d+)/)
-          if (tem != null) return tem.slice(1).join(" ").replace("OPR", "Opera").replace("Edg ", "Edge ")
-        }
-        M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, "-?"]
-        if ((tem = ua.match(/version\/(\d+)/i)) != null) M.splice(1, 1, tem[1])
-        return M.join(" ")
-      })())
 
-      //TODO xpath way of selecting stuff. I like it.
-      function getElementsByXPath(xpath, parent) {
-        let results = []
-        let query = document.evaluate(xpath, parent || document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null)
-        for (let i = 0, length = query.snapshotLength; i < length; ++i) {
-          results.push(query.snapshotItem(i))
-        }
-        return results
-      }
+        document.querySelector(".add-item__button").addEventListener("click", addItem)
+        console.log(navigator.userAgent)
 
-      if (browserAndVersion.includes("Chrome")) {
-        let itemsXPathed = getElementsByXPath("//span[text()='SP']")
-        itemsXPathed.forEach((node) => {
-          node.parentElement.classList.remove("lesson-background-filter")
-          node.parentElement.classList.add("browserColor")
-        })
-      } else if (browserAndVersion.includes("Firefox")) {
-        let itemsXPathed = getElementsByXPath("//span[text()='HY']")
-        itemsXPathed.forEach((node) => {
-          node.parentElement.classList.remove("lesson-background-filter")
-          node.parentElement.classList.add("browserColor")
-        })
-      } else if (browserAndVersion.includes("Edge")) {
-        //here for a chage I got the parent element directly with xpath
-        let itemsXPathed = getElementsByXPath("//div[./span[text()='MI']]")
-        itemsXPathed.forEach((node) => {
-          node.classList.remove("lesson-background-filter")
-          node.classList.add("browserColor")
-        })
-      } else if (browserAndVersion.includes("Opera")) {
-        //here for a chage I got the parent element directly with xpath
-        let itemsXPathed = getElementsByXPath("//div[./span[text()='CE']]")
-        itemsXPathed.forEach((node) => {
-          node.classList.remove("lesson-background-filter")
-          node.classList.add("browserColor")
-        })
-      }
+        //TODO check browser
+
+        let browserAndVersion = (navigator.sayswho = (function () {
+          var ua = navigator.userAgent,
+            tem,
+            M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || []
+          if (/trident/i.test(M[1])) {
+            tem = /\brv[ :]+(\d+)/g.exec(ua) || []
+            return "IE " + (tem[1] || "")
+          }
+          if (M[1] === "Chrome") {
+            tem = ua.match(/\b(OPR|Edge?)\/(\d+)/)
+            if (tem != null) return tem.slice(1).join(" ").replace("OPR", "Opera").replace("Edg ", "Edge ")
+          }
+          M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, "-?"]
+          if ((tem = ua.match(/version\/(\d+)/i)) != null) M.splice(1, 1, tem[1])
+          return M.join(" ")
+        })())
+
+        //TODO xpath way of selecting stuff. I like it.
+        function getElementsByXPath(xpath, parent) {
+          let results = []
+          let query = document.evaluate(xpath, parent || document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null)
+          for (let i = 0, length = query.snapshotLength; i < length; ++i) {
+            results.push(query.snapshotItem(i))
+          }
+          return results
+        }
+
+        if (browserAndVersion.includes("Chrome")) {
+          let itemsXPathed = getElementsByXPath("//span[text()='SP']")
+          itemsXPathed.forEach((node) => {
+            node.parentElement.classList.remove("lesson-background-filter")
+            node.parentElement.classList.add("browserColor")
+          })
+        } else if (browserAndVersion.includes("Firefox")) {
+          let itemsXPathed = getElementsByXPath("//span[text()='HY']")
+          itemsXPathed.forEach((node) => {
+            node.parentElement.classList.remove("lesson-background-filter")
+            node.parentElement.classList.add("browserColor")
+          })
+        } else if (browserAndVersion.includes("Edge")) {
+          //here for a chage I got the parent element directly with xpath
+          let itemsXPathed = getElementsByXPath("//div[./span[text()='MI']]")
+          itemsXPathed.forEach((node) => {
+            node.classList.remove("lesson-background-filter")
+            node.classList.add("browserColor")
+          })
+        } else if (browserAndVersion.includes("Opera")) {
+          //here for a chage I got the parent element directly with xpath
+          let itemsXPathed = getElementsByXPath("//div[./span[text()='CE']]")
+          itemsXPathed.forEach((node) => {
+            node.classList.remove("lesson-background-filter")
+            node.classList.add("browserColor")
+          })
+        }
     </script>
   </body>
 </html>

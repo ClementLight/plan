@@ -229,7 +229,7 @@
       <input type="text" class="add-item__input--account" />
       <button class="add-item__button">Add Item</button>
     </section>
-    <!-- <section class="top-container">
+    <section class="top-container">
       <section class="maincontainers">
         <div class="lessontype">CURRENT</div>
         <div class="lessons">
@@ -240,8 +240,31 @@
           </div>
         </div>
       </section>
-    </section> -->
+    </section>
     <script>
+      document.body.innerHTML = render
+      let render = `
+      <section id="add-item" class="add-item">
+      <input type="text" class="add-item__input--url" />
+      <input type="text" class="add-item__input--name" />
+      <input type="text" class="add-item__input--hours" />
+      <input type="text" class="add-item__input--account" />
+      <button class="add-item__button">Add Item</button>
+    </section>
+    <section class="top-container">
+      <section class="maincontainers">
+        <div class="lessontype">CURRENT</div>
+        <div class="lessons">
+          <div class="lesson lesson-background-filter">
+            <a class="lessonname" href="https://www.udemy.com/course/styled-components-tutorial-and-project-course/learn/lecture/15328098?start=15#overview">React Styled Components Tutorial and Project Course</a>
+            <span class="hours">07</span>
+            <span class="account">SP</span>
+          </div>
+        </div>
+      </section>
+    </section>
+      `
+
       let database = [
         {
           id: "1",
@@ -281,23 +304,6 @@
         },
       ]
 
-      database.map((item) => {
-        document.body.innerHTML += `
-       <section class="top-container">
-        <section class="maincontainers">
-          <div class="lessontype">CURRENT</div>
-          <div class="lessons">
-            <div class="lesson lesson-background-filter">
-              <a class="lessonname" href=${item.url}>${item.title}</a>
-              <span class="hours">${item.hours}</span>
-              <span class="account">${item.account}</span>
-            </div>
-          </div>
-        </section>
-      </section>
-        `
-      })
-
       // const hoursList = [...document.querySelectorAll(".hours")]
       let allClasses = Array.from(document.querySelectorAll(".hours"))
       allClassesValues = allClasses.map((node) => parseInt(node.textContent))
@@ -310,12 +316,12 @@
         itemAccount = document.querySelector(".add-item__input--account").value
 
         newItemHtml = `
-        <div class="lesson lesson-background-filter">
-        <a class="lessonname" href="${itemUrl}">${itemName} </a>
-        <span class="hours">${itemHours}</span>
-        <span class="account">${itemAccount}</span>
-        </div>
-        `
+      <div class="lesson lesson-background-filter">
+      <a class="lessonname" href="${itemUrl}">${itemName} </a>
+      <span class="hours">${itemHours}</span>
+      <span class="account">${itemAccount}</span>
+      </div>
+      `
         document.getElementById("react-section__lessons").insertAdjacentHTML("afterbegin", newItemHtml)
 
         console.log(newItemHtml)
