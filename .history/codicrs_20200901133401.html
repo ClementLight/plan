@@ -17,27 +17,27 @@
     <section class="top-container">
       <section class="maincontainers">
         <div class="lessontype">CURRENT</div>
-        <div id="lessonsCurrent" class="lessons"></div>
+        <div id="lessonscurrent" class="lessons"></div>
       </section>
       <section class="maincontainers">
         <div id="react-section" class="lessontype">REACT</div>
-        <div id="lessonsReact" class="lessons"></div>
+        <div id="lessonsreact" class="lessons"></div>
       </section>
       <section class="maincontainers">
         <div class="lessontype">JS</div>
-        <div id="lessonsJavascript" class="lessons"></div>
+        <div id="lessonsjs" class="lessons"></div>
       </section>
       <section class="maincontainers">
         <div class="lessontype">NODE</div>
-        <div id="lessonsNode" class="lessons"></div>
+        <div id="lessonsnode" class="lessons"></div>
       </section>
       <section class="maincontainers">
         <div class="lessontype">CSS</div>
-        <div id="lessonsCss" class="lessons"></div>
+        <div id="lessonscss" class="lessons"></div>
       </section>
       <section class="maincontainers">
         <div class="lessontype">WEBDEV</div>
-        <div id="lessonsWebdev" class="lessons"></div>
+        <div id="lessonswebdev" class="lessons"></div>
       </section>
     </section>
 
@@ -55,12 +55,14 @@
       // </section>
 
       database.map((item) => {
-        document.getElementById(`lessons${item.subject}`).innerHTML += `
+        document.getElementByID(`lessons+${item.subject}`).innerHTML += `
+
             <div class="lesson lesson-background-filter">
               <a class="lessonname" href=${item.url}>${item.title}</a>
               <span class="hours">${item.hours}</span>
               <span class="account">${item.account}</span>
             </div>
+
         `
       })
 

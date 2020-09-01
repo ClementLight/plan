@@ -14,36 +14,22 @@
       <input type="text" class="add-item__input--account" />
       <button class="add-item__button">Add Item</button>
     </section>
-    <section class="top-container">
+    <!-- <section class="top-container">
       <section class="maincontainers">
         <div class="lessontype">CURRENT</div>
-        <div id="lessonsCurrent" class="lessons"></div>
+        <div class="lessons">
+          <div class="lesson lesson-background-filter">
+            <a class="lessonname" href="https://www.udemy.com/course/styled-components-tutorial-and-project-course/learn/lecture/15328098?start=15#overview">React Styled Components Tutorial and Project Course</a>
+            <span class="hours">07</span>
+            <span class="account">SP</span>
+          </div>
+        </div>
       </section>
-      <section class="maincontainers">
-        <div id="react-section" class="lessontype">REACT</div>
-        <div id="lessonsReact" class="lessons"></div>
-      </section>
-      <section class="maincontainers">
-        <div class="lessontype">JS</div>
-        <div id="lessonsJavascript" class="lessons"></div>
-      </section>
-      <section class="maincontainers">
-        <div class="lessontype">NODE</div>
-        <div id="lessonsNode" class="lessons"></div>
-      </section>
-      <section class="maincontainers">
-        <div class="lessontype">CSS</div>
-        <div id="lessonsCss" class="lessons"></div>
-      </section>
-      <section class="maincontainers">
-        <div class="lessontype">WEBDEV</div>
-        <div id="lessonsWebdev" class="lessons"></div>
-      </section>
-    </section>
+    </section> -->
 
-    <!-- //TODO scripts -->
     <script src="jsondata.js"></script>
     <script>
+
       //   document.body.innerHTML += `
       //  <section class="top-container">
       //   <section idclass="maincontainers">
@@ -53,14 +39,17 @@
       //     </div>
       //   </section>
       // </section>
+        `
 
       database.map((item) => {
-        document.getElementById(`lessons${item.subject}`).innerHTML += `
+        document.getElementByID(`lessons${subject}`).innerHTML += `
+
             <div class="lesson lesson-background-filter">
               <a class="lessonname" href=${item.url}>${item.title}</a>
               <span class="hours">${item.hours}</span>
               <span class="account">${item.account}</span>
             </div>
+
         `
       })
 
