@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+      }
+      .maincontainers {
+        display: flex;
+        width: 100%;
+        background: gainsboro;
+        border: 1px solid #212121;
+      }
+
+      .lessontype {
+        flex-basis: 5%;
+        font-size: 2.5rem;
+        border: rgba(255, 255, 255, 0.05) 1px solid;
+        background-color: indianred;
+        /* background: none; */
+        color: seashell;
+        transform: rotate(-180deg);
+        /* transform-origin: 0 0; */
+        display: flex;
+        /* position: relative; */
+        /* height: 100%; */
+        writing-mode: vertical-rl;
+        padding: 1vh;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .lessons {
+        flex-basis: 95%;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        background-color: khaki;
+        position: relative;
+      }
+      .lesson {
+        display: flex;
+      }
+      .lessonname {
+        flex-basis: 90%;
+        border: #ff000020 0.5px solid;
+      }
+      .lesson:hover {
+        background-color: lightcoral;
+        /* transition: 0.02s; */
+      }
+      .lesson:active {
+        background-color: lightskyblue;
+        transition: 0.1s;
+      }
+      .account {
+        flex-basis: 5%;
+        border: #ff000020 0.5px solid;
+      }
+      .hours {
+        flex-basis: 5%;
+        border: #ff000020 0.5px solid;
+      }
+      a:link {
+        color: #212121;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: #212121;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      a:active {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="maincontainers">
+      <div class="lessontype">REACT</div>
+      <div class="lessons">
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/implement-high-fidelity-designs-with-material-ui-and-reactjs/learn/lecture/16234402?start=165#overview">Implement High Fidelity Designs with Material-UI and ReactJS</a>
+          <span class="hours">04</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/react-lean-by-doing/learn/lecture/16800324?start=512#overview">React 边做边学（从零开始，包含Hooks）</a>
+          <span class="hours">04</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/next-js-react-hooks/learn/lecture/14095110?start=0#overview">Next JS with React Hooks - Building SSR React Applications</a>
+          <span class="hours">04</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/modern-react-front-to-back/learn/lecture/14969812?start=174#overview">React Front To Back</a>
+          <span class="hours">04</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/react-hooks-101/learn/lecture/15049578?start=0#overview">React Hooks 入門 - Hooksと Redux を組み合わせて最新のフロントエンド状態管理手法を習得しよう！</a>
+          <span class="hours">09</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/styled-components-tutorial-and-project-course/learn/lecture/15328098?start=15#overview">React Styled Components Tutorial and Project Course</a>
+          <span class="hours">07</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/13556330#overview">React - The Complete Guide (incl Hooks, React Router, Redux)</a>
+          <span class="hours">41</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/react-for-the-rest-of-us/learn/lecture/18081709#overview">React For The Rest Of Us</a>
+          <span class="hours">04</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/react-cero-experto/learn/lecture/19751074?start=0#announcements">React: De cero a experto ( Hooks y MERN )</a>
+          <span class="hours">43</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/learn/lecture/17666784?start=0#announcements">React - La Guía Completa: Hooks Context Redux MERN +15 Apps</a>
+          <span class="hours">04</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/vue-js-complete-guide/learn/lecture/15370946?#overview">超Vue.js 完全パック - もう他の教材は買わなくてOK！ (Vue Router, Vuex含む)</a>
+          <span class="hours">04</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/full-stack-javascript/learn/lecture/14022702?start=0#overview">The Complete Full-Stack JavaScript Course!</a>
+          <span class="hours">25</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/understanding-typescript-jp/learn/lecture/18184848?start=0#overview">【世界で7万人が受講】Understanding TypeScript - 2020年最新版</a>
+          <span class="hours">25</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="">The Complete Full-Stack JavaScript Course!</a>
+          <span class="hours">25</span>
+          <span class="account">SP</span>
+        </div>
+      </div>
+    </section>
+    <section class="maincontainers">
+      <div class="lessontype">JS</div>
+      <div class="lessons">
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/typescript-the-complete-developers-guide/learn/lecture/14504488?start=0#overview">Typescript: The Complete Developer's Guide [2020]</a>
+          <span class="hours">25</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/new-web-development-secrets/learn/lecture/15578344?start=0#overview">*NEW* Web Development Secrets 2020 - CRP, HTTP, AJAX & More</a>
+          <span class="hours">08</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/build-dynamic-websites-dom-2/learn/lecture/17908964#overview">*NEW* DOM 2020 Build Dynamic Websites with JavaScript Part 2 Leave a rating Your progress</a>
+          <span class="hours">04</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/modern-javascript-from-the-beginning/learn/lecture/8762504?start=0#overview">Modern JavaScript From The Beginning</a>
+          <span class="hours">22</span>
+          <span class="account">CE</span>
+        </div>
+      </div>
+    </section>
+    <section class="maincontainers">
+      <div class="lessontype">NODE</div>
+      <div class="lessons">
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/nodejs-api-masterclass/learn/lecture/16581402?start=0#overview">Node.js API Masterclass With Express & MongoDB Your progress </a>
+          <span class="hours">12</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="">a</a>
+          <span class="hours">04</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="">a</a>
+          <span class="hours">04</span>
+          <span class="account">SP</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="">a</a>
+          <span class="hours">04</span>
+          <span class="account">SP</span>
+        </div>
+      </div>
+    </section>
+    <section class="maincontainers">
+      <div class="lessontype">CSS</div>
+      <div class="lessons">
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/level-up-your-css-animation-skills/learn/lecture/14278658?start=746#overview">Level Up Your CSS Animation Skills</a>
+          <span class="hours">04</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/css-animations-the-complete-guide/learn/lecture/21508866?start=0#overview">CSS Animations: The Complete Guide</a>
+          <span class="hours">07</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/html-css-javascript-course-build-6-creative-projects/learn/lecture/12194674?start=180#overview">HTML, CSS, JavaScript - Build 6 Creative Projects</a>
+          <span class="hours">06</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/creative-css-and-javascript-effects-and-animation/learn/lecture/20827122#overview">Creative CSS and Javascript Effects and Animation</a>
+          <span class="hours">02</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/the-modern-flexbox-grid-sass-animations-developer-course/learn/lecture/20861738?start=15#questions">The Modern Flexbox, Grid, Sass & Animations Developer Course</a>
+          <span class="hours">49</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/the-most-up-tp-date-html5-css3-level-1-essentials-with-100-challenges/learn/lecture/18515152?start=131#overview">The Ultimate HTML5 Elements & CSS3 Properties BOOTCAMP</a>
+          <span class="hours">39</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/mega-css-animation-course/learn/lecture/15322532?start=0#overview">Mega CSS Animation Course : 30 Projects Included</a>
+          <span class="hours">13</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/build-responsive-real-world-websites-in-html5-css-3-js/learn/lecture/20595720?start=0#overview">Build Responsive & Real World Websites in HTML5 CSS 3 & JS</a>
+          <span class="hours">05</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/build-website-elements-with-html-5-css-3-25-project/learn/lecture/8485378?start=360#overview">Build website elements with Html 5 & Css 3- ( 25+ project )</a>
+          <span class="hours">10</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/build-a-real-world-responsive-website-with-html-5-css-3-js/learn/lecture/9007158?start=15#overview">Build a real world responsive website with Html 5 css 3 & JS</a>
+          <span class="hours">11</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/learn-psd-to-responsive-parallax-html-5-css-3-web-design/learn/lecture/12566652?start=0#overview">Learn PSD to Responsive Parallax HTML 5 / CSS 3 Web Design</a>
+          <span class="hours">11</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="">a</a>
+          <span class="hours">11</span>
+          <span class="account">CE</span>
+        </div>
+        <div class="lesson">
+          <a class="lessonname" href="">a</a>
+          <span class="hours">04</span>
+          <span class="account">SP</span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

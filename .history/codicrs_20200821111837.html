@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .maincontainers {
+        display: flex;
+        width: 100%;
+        background: gainsboro;
+      }
+
+      .lessontype {
+        /* flex-basis: 10%; */
+        font-size: 2rem;
+        border: rgba(255, 255, 255, 0.05) 1px solid;
+        background-color: indianred;
+        /* background: none; */
+        color: seashell;
+        transform: rotate(-90deg);
+        transform-origin: 0 0;
+        display: block;
+        position: absolute;
+      }
+
+      .lessons {
+        /* flex-basis: auto; */
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        background-color: khaki;
+      }
+      .lesson {
+        display: flex;
+      }
+      .lessonname {
+        flex-basis: 80%;
+        border: #ff000020 0.5px solid;
+      }
+      .account {
+        flex-basis: 10%;
+        border: #ff000020 0.5px solid;
+      }
+      .hours {
+        flex-basis: 10%;
+        border: #ff000020 0.5px solid;
+      }
+      a:link {
+        color: #212121;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: #212121;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      a:active {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="maincontainers">
+      <div class="lessontype">JS</div>
+      <div class="lessons">
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/css-animations-the-complete-guide/learn/lecture/21443216#overview">CSS Animations: The Complete Guide</a>
+          <span class="hours">04</span>
+          <span>SP</span>
+        </div>
+      </div>
+    </section>
+    <section class="maincontainers">
+      <h1 class="lessontype">REACT</h1>
+      <div class="lessons">
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/css-animations-the-complete-guide/learn/lecture/21443216#overview">CSS Animations: The Complete Guide</a>
+          <span class="hours">04</span>
+          <span>SP</span>
+        </div>
+      </div>
+    </section>
+    <section class="maincontainers">
+      <div class="lessontype">NODEJS</div>
+      <div class="lessons">
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/css-animations-the-complete-guide/learn/lecture/21443216#overview">CSS Animations: The Complete Guide</a>
+          <span class="hours">04</span>
+          <span>SP</span>
+        </div>
+      </div>
+    </section>
+    <section class="maincontainers">
+      <div class="lessontype">JS</div>
+      <div class="lessons">
+        <div class="lesson">
+          <a class="lessonname" href="https://www.udemy.com/course/css-animations-the-complete-guide/learn/lecture/21443216#overview">CSS Animations: The Complete Guide</a>
+          <span class="hours">04</span>
+          <span>SP</span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

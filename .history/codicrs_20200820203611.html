@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flexcontainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      background: gainsboro;
+      }
+
+      .flexcontainer__title {
+          background: green 1px solid;
+      }
+
+      .flexcontainer__js {
+        font-size: 2rem;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      }
+      .flexcontainer__react {
+        font-size: 2rem;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      }
+      .flexcontainer__nodejs {
+        font-size: 2rem;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      }
+      .flexcontainer__css {
+        font-size: 2rem;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      }
+
+      .flexcontainer__item {
+      width: 100%;
+      grid
+      }
+
+      .flexcontainer__item p {
+      font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="flexcontainer">
+      <div class="flexcontainer__title flexcontainer__js"><p>Js</p></div>
+      <div class="flexcontainer__title flexcontainer__react"><p>React</p></div>
+      <div class="flexcontainer__title flexcontainer__nodejs"><p>Nodejs</p></div>
+      <div class="flexcontainer__title flexcontainer__css"><p>Css</p></div>
+      <div class="flexcontainer__item"><p>Lesson5</p></div>
+      <div class="flexcontainer__item"><p>Lesson6</p></div>
+      <div class="flexcontainer__item"><p>Lesson7</p></div>
+      <div class="flexcontainer__item"><p>Lesson8</p></div>
+    </section>
+  </body>
+</html>
