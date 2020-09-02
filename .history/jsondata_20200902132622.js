@@ -568,7 +568,6 @@ let database = [
     account: "CE",
     title: "The Modern Flexbox, Grid, Sass & Animations Developer Course",
     url: "https://www.udemy.com/course/the-modern-flexbox-grid-sass-animations-developer-course/learn/lecture/20861738?start=15#questions",
-    current: true,
   },
   {
     id: "67",

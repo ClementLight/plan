@@ -1,15 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 :root {
   /* --browser-color: var(--tertiary-color);
         --lessons-color: var(--secondary-color);
         --hover-color: var(--septenary-color);
         --main-containers-color: var(--secondary-color);
          */
-  --topBar: -11.2rem;
   --primary-color: #e5989b;
   --secondary-color: #ffb4a2;
   --tertiary-color: #ffcdb2;
@@ -85,14 +79,8 @@ body {
   box-shadow: 1px 1px 15px rgb(24, 23, 21, 1);
   width: 100vw;
   border-bottom: none;
-  transform: translateY(var(--topBar));
   z-index: 5;
-  transition: all 0.4s;
-  transition-delay: 0.3s;
   /* transform: translateY(-10rem); */
-}
-.add-item:hover {
-  transform: translateY(0);
 }
 .add-item__input--url {
   background-color: var(--input-color);
@@ -135,14 +123,12 @@ body {
   font-size: 2.5rem;
   overflow-x: hidden;
   border-top: none;
-  transform: translateY(var(--topBar));
 }
 .maincontainers {
   display: flex;
   width: 100vw;
   background: var(--main-containers-color);
   border: 1px solid #212121;
-  border-top: none;
 }
 
 .lessontype {
@@ -170,6 +156,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  border-top: none;
 }
 .lesson {
   display: flex;

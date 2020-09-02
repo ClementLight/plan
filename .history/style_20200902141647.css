@@ -9,7 +9,6 @@
         --hover-color: var(--septenary-color);
         --main-containers-color: var(--secondary-color);
          */
-  --topBar: -11.2rem;
   --primary-color: #e5989b;
   --secondary-color: #ffb4a2;
   --tertiary-color: #ffcdb2;
@@ -85,13 +84,12 @@ body {
   box-shadow: 1px 1px 15px rgb(24, 23, 21, 1);
   width: 100vw;
   border-bottom: none;
-  transform: translateY(var(--topBar));
+  transform: translateY(-80%);
   z-index: 5;
-  transition: all 0.4s;
-  transition-delay: 0.3s;
   /* transform: translateY(-10rem); */
 }
 .add-item:hover {
+  transition: all 0.4s;
   transform: translateY(0);
 }
 .add-item__input--url {
@@ -135,7 +133,6 @@ body {
   font-size: 2.5rem;
   overflow-x: hidden;
   border-top: none;
-  transform: translateY(var(--topBar));
 }
 .maincontainers {
   display: flex;

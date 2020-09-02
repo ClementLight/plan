@@ -9,7 +9,7 @@
         --hover-color: var(--septenary-color);
         --main-containers-color: var(--secondary-color);
          */
-  --topBar: -11.2rem;
+  --topBar: -10rem;
   --primary-color: #e5989b;
   --secondary-color: #ffb4a2;
   --tertiary-color: #ffcdb2;
@@ -88,7 +88,6 @@ body {
   transform: translateY(var(--topBar));
   z-index: 5;
   transition: all 0.4s;
-  transition-delay: 0.3s;
   /* transform: translateY(-10rem); */
 }
 .add-item:hover {
