@@ -228,7 +228,7 @@ a:active {
 .firefox {
   background-image: url(./firefox.png);
   background-position: center;
-  background-size: 25px;
+  background-size: 20px;
   background-repeat: no-repeat;
 }
 
@@ -251,6 +251,6 @@ a:active {
 .opera {
   background-image: url(./opera.png);
   background-position: center;
-  background-size: 25px;
+  background-size: 30px;
   background-repeat: no-repeat;
 }

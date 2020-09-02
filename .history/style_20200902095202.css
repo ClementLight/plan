@@ -215,42 +215,25 @@ a:active {
 
 .chrome {
   background-image: url(./chrome.png);
-  background-position: center;
-  background-size: 30px;
+  background-position: right;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .edge {
   background-image: url(./edge.png);
-  background-position: center;
-  background-size: 30px;
+  background-position: right;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .firefox {
   background-image: url(./firefox.png);
-  background-position: center;
-  background-size: 25px;
-  background-repeat: no-repeat;
-}
-
-/* .account::after {
-  content: "";
-  background-image: url(./opera.png);
+  background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 1;
-   top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  z-index: 5;
-} */
-
+}
 .opera {
   background-image: url(./opera.png);
-  background-position: center;
-  background-size: 25px;
+  background-position: right;
+  background-size: 70% 70%;
   background-repeat: no-repeat;
 }

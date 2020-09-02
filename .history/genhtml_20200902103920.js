@@ -27,7 +27,6 @@ function generateBaseHtml() {
   })
 }
 
-// determine browser version using regex
 let browserAndVersion = (navigator.sayswho = (function () {
   var ua = navigator.userAgent,
     tem,
@@ -44,44 +43,62 @@ let browserAndVersion = (navigator.sayswho = (function () {
   if ((tem = ua.match(/version\/(\d+)/i)) != null) M.splice(1, 1, tem[1])
   return M.join(" ")
 })())
-console.log(browserAndVersion)
+
 function distributeLessons() {
   database.map((item) => {
-    // below class is set on lesson divs based on the browser that we determined above
-    let setLessonClass = `${item.account === "SP" ? (browserAndVersion.includes("Chrome") ? "browserColor" : "") : ""}
-      ${item.account === "HY" ? (browserAndVersion.includes("Firefox") ? "browserColor" : "") : ""}
-      ${item.account === "MI" ? (browserAndVersion.includes("Edge") ? "browserColor" : "") : ""}
-      ${item.account === "CE" ? (browserAndVersion.includes("Opera") ? "browserColor" : "") : ""}`
-    // below account class is determined based on the value of json key
-    let setAccountClass = `
-      ${item.account === "SP" ? "chrome" : ""}
-      ${item.account === "HY" ? "firefox" : ""}
-      ${item.account === "MI" ? "edge" : ""}
-      ${item.account === "CE" ? "opera" : ""}
-    `
-    // below checking if current value of json is true, if not then just add in its normal category, else both add in its normal category and in the current category
     if (item.current !== true) {
       document.getElementById(`lessons${item.subject}`).innerHTML += `
-        <div class="lesson lesson-background-filter ${setLessonClass}">
+        <div class="lesson lesson-background-filter ${item.account}
+        ${browserAndVersion.includes("Chrome") ? "browserColor" : ""}
+        ${browserAndVersion.includes("Edge") ? "browserColor" : ""}
+        ${browserAndVersion.includes("Firefox") ? "browserColor" : ""}
+        ${browserAndVersion.includes("Opera") ? "browserColor" : ""}
+        ">
           <a class="lessonname" href=${item.url}>${item.title}</a>
           <span class="hours">${item.hours}</span>
-          <span class="account ${setAccountClass}"></span>
+          <span class="account  
+          ${item.account === "SP" ? "chrome" : ""}
+          ${item.account === "HY" ? "firefox" : ""}
+          ${item.account === "MI" ? "edge" : ""}
+          ${item.account === "CE" ? "opera" : ""}
+          "></span>
         </div>
     `
     } else {
       document.getElementById(`lessons${item.subject}`).innerHTML += `
-        <div class="lesson lesson-background-filter $${setLessonClass}">
+        <div class="lesson lesson-background-filter
+        ${browserAndVersion.includes("Chrome") ? "browserColor" : ""}
+        ${browserAndVersion.includes("Edge") ? "browserColor" : ""}
+        ${browserAndVersion.includes("Firefox") ? "browserColor" : ""}
+        ${browserAndVersion.includes("Opera") ? "browserColor" : ""}
+        ">
           <a class="lessonname" href=${item.url}>${item.title}</a>
           <span class="hours">${item.hours}</span>
-          <span class="account ${setAccountClass}"></span>
+          <span class="account
+          ${item.account === "SP" ? "chrome" : ""}
+          ${item.account === "HY" ? "firefox" : ""}
+          ${item.account === "MI" ? "edge" : ""}
+          ${item.account === "CE" ? "opera" : ""}"
+          ></span>
         </div>
     `
 
       document.getElementById(`lessonsCurrent`).innerHTML += `
-        <div class="lesson lesson-background-filter ${setLessonClass}">
+        <div class="lesson lesson-background-filter
+        ${browserAndVersion.includes("Chrome") ? "browserColor" : ""}
+        ${browserAndVersion.includes("Edge") ? "browserColor" : ""}
+        ${browserAndVersion.includes("Firefox") ? "browserColor" : ""}
+        ${browserAndVersion.includes("Opera") ? "browserColor" : ""}
+        ">
           <a class="lessonname" href=${item.url}>${item.title}</a>
           <span class="hours">${item.hours}</span>
-          <span class="account ${setAccountClass}"></span>
+          <span class="account
+          ${item.account === "SP" ? "chrome" : ""}
+          ${item.account === "HY" ? "firefox" : ""}
+          ${item.account === "MI" ? "edge" : ""}
+          ${item.account === "CE" ? "opera" : ""}"
+          
+          ></span>
         </div>
     `
     }

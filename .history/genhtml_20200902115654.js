@@ -61,6 +61,7 @@ function distributeLessons() {
     `
     // below checking if current value of json is true, if not then just add in its normal category, else both add in its normal category and in the current category
     if (item.current !== true) {
+      console.log(setLessonClass)
       document.getElementById(`lessons${item.subject}`).innerHTML += `
         <div class="lesson lesson-background-filter ${setLessonClass}">
           <a class="lessonname" href=${item.url}>${item.title}</a>

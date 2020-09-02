@@ -215,20 +215,20 @@ a:active {
 
 .chrome {
   background-image: url(./chrome.png);
-  background-position: center;
-  background-size: 30px;
+  background-position: right;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .edge {
   background-image: url(./edge.png);
-  background-position: center;
-  background-size: 30px;
+  background-position: right;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .firefox {
   background-image: url(./firefox.png);
-  background-position: center;
-  background-size: 25px;
+  background-position: right;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -250,7 +250,7 @@ a:active {
 
 .opera {
   background-image: url(./opera.png);
-  background-position: center;
-  background-size: 25px;
+  background-position: right;
+  background-size: 30px;
   background-repeat: no-repeat;
 }
