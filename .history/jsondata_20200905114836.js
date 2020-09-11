@@ -1,12 +1,12 @@
 let database = [
 	{
 		id: '1',
-		subject: 'Vue',
-		tags: 'Vue, Quasar',
-		hours: 15,
-		account: 'HY',
-		title: 'PWA with Vue JS, Quasar & Firebase (with NodeJS & Express)',
-		url: 'https://www.udemy.com/course/pwa-with-vuejs-quasar-firebase/learn/lecture/20492130#overview',
+		subject: 'React',
+		tags: 'React, Microservices, Node',
+		hours: 54,
+		account: 'SP',
+		title: 'Microservices with Node JS and React',
+		url: 'https://www.udemy.com/course/microservices-with-node-js-and-react/learn/lecture/19248060#overview',
 	},
 	{
 		id: '2',
@@ -25,6 +25,7 @@ let database = [
 		account: 'HY',
 		title: 'React Tutorial and Projects Course',
 		url: 'https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/12499178?start=0#overview',
+		current: true,
 	},
 	{
 		id: '4',
@@ -90,6 +91,7 @@ let database = [
 		account: 'MI',
 		title: 'Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)',
 		url: 'https://www.udemy.com/course/complete-react-developer-zero-to-mastery/learn/lecture/14870615?start=0#overview',
+		current: true,
 	},
 	{
 		id: '12',
@@ -126,7 +128,6 @@ let database = [
 		account: 'SP',
 		title: 'Next JS with React Hooks - Building SSR React Applications',
 		url: 'https://www.udemy.com/course/next-js-react-hooks/learn/lecture/14095110?start=0#overview',
-		completed: true,
 	},
 	{
 		id: '16',
@@ -154,6 +155,7 @@ let database = [
 		account: 'SP',
 		title: 'React Styled Components Tutorial and Project Course',
 		url: 'https://www.udemy.com/course/styled-components-tutorial-and-project-course/learn/lecture/15328098?start=15#overview',
+		current: true,
 	},
 	{
 		id: '19',
@@ -163,6 +165,7 @@ let database = [
 		account: 'SP',
 		title: 'React - The Complete Guide (incl Hooks, React Router, Redux)',
 		url: 'https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/13556330#overview',
+		current: true,
 	},
 	{
 		id: '20',
@@ -226,11 +229,10 @@ let database = [
 		account: 'HY',
 		title: 'Next.js and Apollo - Portfolio App (w/ React, GraphQL, Node)',
 		url: 'https://www.udemy.com/course/nextjs-and-apollo-portfolio-app-w-react-graphql-node/learn/lecture/18742898?start=0#overview',
-		current: true,
 	},
 	{
 		id: '27',
-		subject: 'Vue',
+		subject: 'React',
 		tags: 'Vue',
 		hours: 18,
 		account: 'SP',
@@ -329,7 +331,7 @@ let database = [
 	},
 	{
 		id: '38',
-		subject: 'Node',
+		subject: 'React',
 		tags: 'Serverless, React, AWS',
 		hours: 8,
 		account: 'HY',
@@ -376,7 +378,7 @@ let database = [
 	},
 	{
 		id: '43',
-		subject: 'Node',
+		subject: 'React',
 		tags: 'Serverless, React, AWS, GraphQL',
 		hours: 11,
 		account: 'HY',
@@ -393,15 +395,7 @@ let database = [
 		title: 'Webpack 4: Beyond the Basics',
 		url: 'https://www.udemy.com/course/webpack-beyond-the-basics/learn/lecture/8445416?start=285#overview',
 	},
-	{
-		id: '45',
-		subject: 'Node',
-		tags: 'Chatbot, React, Node',
-		hours: 10,
-		account: 'HY',
-		title: 'Create Chatbot for Website with React and Node.js',
-		url: 'https://www.udemy.com/course/chatbot-for-website-with-react-and-nodejs/learn/lecture/10497038#overview',
-	},
+
 	{
 		id: '46',
 		subject: 'Javascript',
@@ -438,6 +432,7 @@ let database = [
 		account: 'SP',
 		title: 'Electron From Scratch: Build Desktop Apps With JavaScript',
 		url: 'https://www.udemy.com/course/electron-from-scratch/learn/lecture/19823412#overview',
+		current: true,
 	},
 	{
 		id: '50',
@@ -556,6 +551,7 @@ let database = [
 		account: 'SP',
 		title: 'Advanced CSS and Sass: Flexbox, Grid, Animations and More!',
 		url: 'https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8859760?start=150#overview',
+		current: true,
 	},
 	{
 		id: '63',
@@ -592,6 +588,7 @@ let database = [
 		account: 'CE',
 		title: 'The Modern Flexbox, Grid, Sass & Animations Developer Course',
 		url: 'https://www.udemy.com/course/the-modern-flexbox-grid-sass-animations-developer-course/learn/lecture/20861738?start=15#questions',
+		current: true,
 	},
 	{
 		id: '67',
@@ -718,71 +715,5 @@ let database = [
 		account: 'SP',
 		title: '(Ken Cen出品)建網百科全書-使用 HTML,CSS,JS, jQuery,php,mySQL 建立網站',
 		url: 'https://www.udemy.com/course/ken-cens/learn/lecture/5246918?start=30#overview',
-	},
-	{
-		id: '81',
-		subject: 'Node',
-		tags: 'Node, API',
-		hours: 3,
-		account: 'SP',
-		title: 'Node JS API Development for Beginners',
-		url: 'https://www.udemy.com/course/node-js-api-tutorial/learn/lecture/13683140#overview',
-	},
-	{
-		id: '82',
-		subject: 'Node',
-		tags: 'React, Node, AWS',
-		hours: 25,
-		account: 'HY',
-		title: 'React Node AWS - Build infinitely Scaling MERN Stack App',
-		url: 'https://www.udemy.com/course/mern-react-node-aws/learn/lecture/18082809#overview',
-	},
-	{
-		id: '83',
-		subject: 'React',
-		tags: 'React, AWS',
-		hours: 22,
-		account: 'HY',
-		title: 'Build a Modern React and Redux App with CircleCI CI/CD & AWS',
-		url: 'https://www.udemy.com/course/build-a-modern-react-and-redux-app-with-circleci-cicd-aws/learn/lecture/19258746#overview',
-	},
-
-	{
-		id: '84',
-		subject: 'React',
-		tags: 'React, Microservices, Node',
-		hours: 54,
-		account: 'SP',
-		title: 'Microservices with Node JS and React',
-		url: 'https://www.udemy.com/course/microservices-with-node-js-and-react/learn/lecture/19248060#overview',
-	},
-	{
-		id: '85',
-		subject: 'Vue',
-		tags: 'Vue, Nuxt',
-		hours: 1,
-		account: 'HY',
-		title: 'Nuxt.js - Blazing Fast Static Sites with Vue.js',
-		url: 'https://www.udemy.com/course/introduction-nuxt-js/learn/lecture/19043778#overview',
-	},
-	{
-		id: '86',
-		subject: 'React',
-		tags: 'React, Next',
-		hours: 30,
-		account: 'HY',
-		title: 'Server side rendering with Next + React',
-		url: 'https://www.udemy.com/course/server-side-rendering-with-next-react/learn/lecture/15279966#overview',
-		current: true,
-	},
-	{
-		id: '87',
-		subject: 'React',
-		tags: 'React, Next',
-		hours: 60,
-		account: 'HY',
-		title: 'Complete Next.js with React & Node - Beautiful Portfolio App',
-		url: 'https://www.udemy.com/course/awesome-nextjs-with-react-and-node-amazing-portfolio-app/learn/lecture/19974126#overview',
-		current: true,
 	},
 ]
