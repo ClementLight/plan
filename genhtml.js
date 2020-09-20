@@ -53,13 +53,15 @@ function distributeLessons() {
 		let setLessonClass = `${item.account === 'SP' ? (browserAndVersion.includes('Chrome') ? 'browserColor' : '') : ''}
       ${item.account === 'HY' ? (browserAndVersion.includes('Firefox') ? 'browserColor' : '') : ''}
       ${item.account === 'MI' ? (browserAndVersion.includes('Edge') ? 'browserColor' : '') : ''}
-      ${item.account === 'CE' ? (browserAndVersion.includes('Opera') ? 'browserColor' : '') : ''}`
+      ${item.account === 'CE' ? (browserAndVersion.includes('Opera') ? 'browserColor' : '') : ''}
+      ${item.account === 'YT' ? 'browserColor' : ''}`
 		// below account class is determined based on the value of json key
 		let setAccountClass = `
       ${item.account === 'SP' ? 'chrome' : ''}
       ${item.account === 'HY' ? 'firefox' : ''}
       ${item.account === 'MI' ? 'edge' : ''}
       ${item.account === 'CE' ? 'opera' : ''}
+      ${item.account === 'YT' ? 'youtube' : ''}
     `
 		// below checking if current value of json is true, if not then just add in its normal category, else  add both in its normal category and in the current category
 		if (item.current !== true) {

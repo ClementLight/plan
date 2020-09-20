@@ -245,6 +245,12 @@ a:active {
 	background-size: 25px;
 	background-repeat: no-repeat;
 }
+.youtube {
+	background-image: url(./youtube.png);
+	background-position: center;
+	background-size: 25px;
+	background-repeat: no-repeat;
+}
 
 /* .account::after {
   content: "";
@@ -270,5 +276,5 @@ a:active {
 }
 
 .completed {
-	background-color: #1ea460;
+	background-color: #d8da46;
 }
