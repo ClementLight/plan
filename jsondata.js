@@ -53,7 +53,6 @@ let database = [
 		account: 'SP',
 		title: 'The Complete Strapi Course',
 		url: 'https://www.udemy.com/course/the-complete-strapi-course/learn/lecture/20153090#overvieww',
-		current: true,
 	},
 	{
 		id: '7',
@@ -327,6 +326,7 @@ let database = [
 		account: 'SP',
 		title: '【世界で7万人が受講】Understanding TypeScript - 2020年最新版',
 		url: 'https://www.udemy.com/course/understanding-typescript-jp/learn/lecture/18184848?start=0#overview',
+		current: true,
 	},
 	{
 		id: '37',
@@ -339,7 +339,7 @@ let database = [
 	},
 	{
 		id: '38',
-		subject: 'Node',
+		subject: 'Aws',
 		tags: 'Serverless, React, AWS',
 		hours: 8,
 		account: 'HY',
@@ -386,7 +386,7 @@ let database = [
 	},
 	{
 		id: '43',
-		subject: 'Node',
+		subject: 'Aws',
 		tags: 'Serverless, React, AWS, GraphQL',
 		hours: 11,
 		account: 'HY',
@@ -602,7 +602,7 @@ let database = [
 		account: 'CE',
 		title: 'The Modern Flexbox, Grid, Sass & Animations Developer Course',
 		url: 'https://www.udemy.com/course/the-modern-flexbox-grid-sass-animations-developer-course/learn/lecture/20861738?start=15#questions',
-		current: true,
+		main: true,
 	},
 	{
 		id: '67',
@@ -742,7 +742,7 @@ let database = [
 	},
 	{
 		id: '82',
-		subject: 'Node',
+		subject: 'Aws',
 		tags: 'React, Node, AWS',
 		hours: 25,
 		account: 'HY',
@@ -751,7 +751,7 @@ let database = [
 	},
 	{
 		id: '83',
-		subject: 'React',
+		subject: 'Aws',
 		tags: 'React, AWS',
 		hours: 22,
 		account: 'HY',
@@ -830,7 +830,6 @@ let database = [
 		account: 'YT',
 		title: '日本一わかりやすいReact-Redux入門#1...講座の概要【ECアプリを作ろう】',
 		url: 'https://www.youtube.com/watch?v=FBMA34gUsgw&list=PLX8Rsrpnn3IWavNOj3n4Vypzwb3q1RXhr&index=1',
-		current: true,
 	},
 	{
 		id: '92',
@@ -867,7 +866,6 @@ let database = [
 		account: 'YT',
 		title: 'Set Up a New Gatsby + Shopify Ecommerce Site',
 		url: 'https://www.youtube.com/watch?v=JwKMOH9k7-o',
-		current: true,
 	},
 	{
 		id: '96',
@@ -1160,6 +1158,7 @@ let database = [
 		account: 'YT',
 		title: 'Learn Vue 3 for Beginners - Full 2020 Tutorial Course',
 		url: 'https://www.youtube.com/watch?v=ZqgiuPt5QZo&t=945s',
+		importance: 3,
 	},
 	{
 		id: '128',
@@ -1241,6 +1240,7 @@ let database = [
 		account: 'YT',
 		title: 'Getting started with Next.js, TypeScript, and Stripe',
 		url: 'https://www.youtube.com/watch?v=sPUSu19tZHg',
+		importance: 3,
 	},
 	{
 		id: '137',
@@ -1250,6 +1250,7 @@ let database = [
 		account: 'YT',
 		title: 'Master Laravel with GraphQL, Vue.js and Tailwind',
 		url: 'https://www.udemy.com/course/master-laravel-with-graphql-vuejs-and-tailwind/learn/lecture/21630536#overview',
+		importance: 1,
 	},
 	{
 		id: '138',
@@ -1314,7 +1315,6 @@ let database = [
 		account: 'YT',
 		title: 'Making Websites With Next.js And Strapi',
 		url: 'https://www.youtube.com/watch?v=HANfPCP_g4o&list=PLUBR53Dw-Ef_oTLzPB3G5CdLWnGOSsec3',
-		current: true,
 	},
 	{
 		id: '145',
@@ -1340,12 +1340,12 @@ let database = [
 		tags: 'Next',
 		hours: 3,
 		account: 'YT',
-		title: 'NNext JS Building Apps with React',
+		title: 'Next JS Building Apps with React',
 		url: 'https://www.youtube.com/watch?v=9vt-gkKiKAg&list=PLIGDNOJWiL19vRa2fITxnBD4MUQpQZJB0',
 	},
 	{
 		id: '148',
-		subject: 'Next',
+		subject: 'Aws',
 		tags: 'Next',
 		hours: 1,
 		account: 'YT',
@@ -1461,6 +1461,71 @@ let database = [
 		account: 'HY',
 		title: 'React Avanzado: Fullstack Next.js, Apollo, MongoDB y GraphQL',
 		url: 'https://www.udemy.com/course/fullstack-react-graphql-y-apollo-de-principiante-a-experto/learn/lecture/19098334#overview',
-		current: true,
+	},
+	{
+		id: '161',
+		subject: 'Node',
+		tags: 'Stripe',
+		hours: 1,
+		account: 'YT',
+		title: 'Getting Started with Stripe',
+		url: 'https://www.youtube.com/watch?v=qLoWEaGpzNc&list=PLy1nL-pvL2M4b_SNM-AEvo6V8pmltUsep&index=2',
+	},
+	{
+		id: '162',
+		subject: 'Node',
+		tags: 'Node, React, eCommerce',
+		hours: 15,
+		account: 'HY',
+		title: 'MERN eCommerce From Scratch',
+		url: 'https://www.udemy.com/course/mern-ecommerce/learn/lecture/22483002#overview',
+		main: true,
+	},
+	{
+		id: '163',
+		subject: 'Next',
+		tags: 'Next',
+		hours: 3,
+		account: 'YT',
+		title: 'Learn Next.js in One Video - Fundamentals of Next.js',
+		url: 'https://www.youtube.com/watch?v=tt3PUvhOVzo',
+	},
+	{
+		id: '164',
+		subject: 'Next',
+		tags: 'Next',
+		hours: 7,
+		account: 'YT',
+		title: 'Typescript, Next.js, And GraphQL Series',
+		url: 'https://www.youtube.com/watch?v=U86hn1HmuFU&list=PLN3n1USn4xlkDk8vPVtgyGG3_1eXYPrW-&index=2',
+	},
+	{
+		id: '165',
+		subject: 'Next',
+		tags: 'Next, Ghost',
+		hours: 1,
+		account: 'YT',
+		title: 'Build a Blog With Next.js & Ghost',
+		url: 'https://www.youtube.com/watch?v=1SYU1GorO6Y',
+		completed: true,
+	},
+	{
+		id: '165',
+		subject: 'Node',
+		tags: 'Node',
+		hours: 19,
+		account: 'HY',
+		title: 'Master Full-Stack Web Development | Node, SQL, React, & More',
+		url: 'https://www.udemy.com/course/full-stack/learn/lecture/11382184#overview',
 	},
 ]
+
+function compareDecimals(a, b) {
+	if (a.importance === b.importance) return 0
+
+	return a.importance < b.importance ? -1 : 1
+}
+
+let sortedDatabase = database.sort(compareDecimals)
+
+console.log(sortedDatabase)

@@ -1,20 +1,23 @@
 function generateBaseHtml() {
-	subjects = []
+	let subjects = []
 
+	//getSubjects functions checks if the subjects array has the subject name. If so, returns. If not, adds.
 	function getSubjects(subjects, itemsubject) {
 		if (subjects.includes(itemsubject)) return
 		else {
+			if (subjects.includes('Main') === false) subjects.push('Main')
 			if (subjects.includes('Current') === false) subjects.push('Current')
 			subjects.push(itemsubject)
 		}
 	}
-
+	//database.map is breaking up the array of my objects and sending it the the getSubjects function so that the getSubjects function can form an array of subjects which will then be used to form the main containers of the html.
 	database.map((item) => {
 		return getSubjects(subjects, item.subject)
 	})
 
 	console.log(subjects)
 
+	//dynamic category names are set below
 	subjects.map((el) => {
 		document.body.innerHTML += `
      <section class="top-container">
@@ -48,13 +51,17 @@ let browserAndVersion = (navigator.sayswho = (function () {
 console.log(browserAndVersion)
 
 function distributeLessons() {
-	database.map((item) => {
+	sortedDatabase.map((item) => {
 		// below class is set on lesson divs based on the browser that we determined above
 		let setLessonClass = `${item.account === 'SP' ? (browserAndVersion.includes('Chrome') ? 'browserColor' : '') : ''}
+
       ${item.account === 'HY' ? (browserAndVersion.includes('Firefox') ? 'browserColor' : '') : ''}
       ${item.account === 'MI' ? (browserAndVersion.includes('Edge') ? 'browserColor' : '') : ''}
       ${item.account === 'CE' ? (browserAndVersion.includes('Opera') ? 'browserColor' : '') : ''}
-      ${item.account === 'YT' ? 'browserColor' : ''}`
+	   `
+		//below lin cut from the above ternary so the youtube classes are not given background color. If need be, could be re-added.
+		//    ${item.account === 'YT' ? 'browserColor' : ''}
+
 		// below account class is determined based on the value of json key
 		let setAccountClass = `
       ${item.account === 'SP' ? 'chrome' : ''}
@@ -64,15 +71,31 @@ function distributeLessons() {
       ${item.account === 'YT' ? 'youtube' : ''}
     `
 		// below checking if current value of json is true, if not then just add in its normal category, else  add both in its normal category and in the current category
-		if (item.current !== true) {
+		if (item.current !== true && item.main !== true) {
 			document.getElementById(`lessons${item.subject}`).innerHTML += `
         <div class="${item.completed ? 'completed' : ''} lesson lesson-background-filter ${setLessonClass}">
           <a class="lessonname" href=${item.url}>${item.title}</a>
           <span class="hours">${item.hours}</span>
           <span class="account ${setAccountClass}"></span>
         </div>
+	`
+		} else if (item.main === true) {
+			document.getElementById(`lessons${item.subject}`).innerHTML += `
+        <div class="${item.completed ? 'completed' : ''} lesson lesson-background-filter ${setLessonClass}">
+          <a class="lessonname" href=${item.url}>${item.title}${item.completed ? '&lt;&Cfr;&Ofr;&Mfr;&Pfr;&Lfr;&Efr;&Tfr;&Efr;&Dfr;&sol;&gt;' : ''}</a>
+          <span class="hours">${item.hours}</span>
+          <span class="account ${setAccountClass}"></span>
+        </div>
     `
-		} else {
+
+			document.getElementById(`lessonsMain`).innerHTML += `
+        <div class="lesson lesson-background-filter ${setLessonClass}">
+          <a class="lessonname" href=${item.url}>${item.title}</a>
+          <span class="hours">${item.hours}</span>
+          <span class="account ${setAccountClass}"></span>
+        </div>
+    `
+		} else if (item.current === true) {
 			document.getElementById(`lessons${item.subject}`).innerHTML += `
         <div class="${item.completed ? 'completed' : ''} lesson lesson-background-filter ${setLessonClass}">
           <a class="lessonname" href=${item.url}>${item.title}${item.completed ? '&lt;&Cfr;&Ofr;&Mfr;&Pfr;&Lfr;&Efr;&Tfr;&Efr;&Dfr;&sol;&gt;' : ''}</a>
@@ -91,7 +114,7 @@ function distributeLessons() {
 		}
 	})
 }
-
+console.log(database)
 generateBaseHtml()
 
 distributeLessons()
